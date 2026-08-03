@@ -38,7 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     analyzeBtn.addEventListener('click', () => {
         const headline = headlineInput.value.trim();
-        if (!headline) return;
+        if (!headline) {
+            alert("Por favor, digite um título para analisar!");
+            return;
+        }
 
         analyzerResults.classList.remove('hidden');
         
@@ -131,7 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     generateBtn.addEventListener('click', () => {
         let keyword = keywordInput.value.trim();
-        if (!keyword) return;
+        if (!keyword) {
+            alert("Por favor, digite um nicho ou assunto!");
+            return;
+        }
 
         // Capitalize first letter
         keyword = keyword.charAt(0).toUpperCase() + keyword.slice(1);

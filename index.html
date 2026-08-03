@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata Bernardo | Redação SEO de Alta Conversão</title>
+    <meta name="description" content="Especialista em redação SEO. Artigos que rankeiam no Google e convertem visitantes em clientes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">RC<span>Digital.</span></div>
+            <nav class="nav">
+                <a href="#ferramentas">Ferramentas Gratuitas</a>
+                <a href="#servicos">Meus Serviços</a>
+                <a href="#planos">Planos</a>
+            </nav>
+            <a href="mailto:renatabernardo.846@gmail.com?subject=Orçamento de Redação SEO" class="btn btn-primary">Contratar Especialista</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero container">
+            <div class="hero-content">
+                <h1 class="hero-title">Eleve sua Marca. <span class="gradient-text">Escale seu Tráfego.</span></h1>
+                <p class="hero-description">
+                    Não basta escrever, é preciso rankear. Transforme seu blog em uma máquina de vendas com artigos otimizados em SEO, escritos por um especialista.
+                </p>
+                
+                <div class="benefits">
+                    <div class="benefit"><span class="check">✓</span> 100% Original</div>
+                    <div class="benefit"><span class="check">✓</span> Otimizado para o Google</div>
+                    <div class="benefit"><span class="check">✓</span> Alta Conversão</div>
+                </div>
+            </div>
+
+            <div class="hero-tool" id="ferramentas">
+                <div class="glass-panel">
+                    <div class="tool-tabs">
+                        <button class="tab-btn active" data-tab="analyzer">Analisador de Títulos</button>
+                        <button class="tab-btn" data-tab="generator">Gerador de Ideias</button>
+                    </div>
+
+                    <!-- Analyzer Tool -->
+                    <div class="tool-content active" id="analyzer-tool">
+                        <h2>Análise SEO de Título</h2>
+                        <p>Descubra se o seu título vai atrair cliques.</p>
+                        <div class="input-group">
+                            <input type="text" id="headline-input" placeholder="Ex: Como ganhar dinheiro online em 2026..." autocomplete="off">
+                            <button id="analyze-btn" class="btn btn-glow">Analisar Título</button>
+                        </div>
+                        <div class="results hidden" id="analyzer-results">
+                            <div class="score-circle">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" id="score-path" />
+                                    <text x="18" y="20.35" class="percentage" id="score-text">0</text>
+                                </svg>
+                                <span>SEO SCORE</span>
+                            </div>
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-label">Tamanho</span>
+                                    <span class="metric-value" id="length-val">0 chars</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Palavras de Poder</span>
+                                    <span class="metric-value" id="power-val">0</span>
+                                </div>
+                            </div>
+                            <div class="recommendation" id="analyzer-feedback"></div>
+                        </div>
+                    </div>
+
+                    <!-- Generator Tool -->
+                    <div class="tool-content hidden" id="generator-tool">
+                        <h2>Gerador de Ideias de Conteúdo</h2>
+                        <p>Sem ideias? Digite o seu nicho ou palavra-chave.</p>
+                        <div class="input-group">
+                            <input type="text" id="keyword-input" placeholder="Ex: Emagrecimento, Finanças, Pets..." autocomplete="off">
+                            <button id="generate-btn" class="btn btn-glow">Gerar Ideias</button>
+                        </div>
+                        <div class="results hidden" id="generator-results">
+                            <ul class="idea-list" id="idea-list">
+                                <!-- Ideas injected by JS -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="upsell-box">
+                        <p>Dá muito trabalho fazer isso sozinho?</p>
+                        <a href="mailto:renatabernardo.846@gmail.com?subject=Orçamento de Redação SEO" class="btn-text">Contrate meus serviços de redação &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="servicos">
+            <div class="container">
+                <h2 class="section-title">A Diferença de um Profissional</h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="icon">🔍</div>
+                        <h3>Pesquisa de Concorrência</h3>
+                        <p>Analiso o que está rankeando no Top 3 do Google e crio um conteúdo ainda mais completo e profundo.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <div class="icon">⚡</div>
+                        <h3>Otimização On-Page (SEO)</h3>
+                        <p>Uso estratégico de tags H1, H2, H3, densidade de palavras-chave ideal, LSI keywords e links internos.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <div class="icon">✍️</div>
+                        <h3>Copywriting Persuasivo</h3>
+                        <p>Não é apenas tráfego. Escrevo textos desenhados para reter a atenção do leitor e convertê-lo em cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="planos">
+            <div class="container">
+                <h2 class="section-title">Invista no seu Tráfego</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card glass-card">
+                        <h3>Artigo Avulso</h3>
+                        <div class="price">R$ 150<span>/artigo</span></div>
+                        <ul class="pricing-features">
+                            <li>✓ Até 1.000 palavras</li>
+                            <li>✓ Pesquisa de SEO Completa</li>
+                            <li>✓ Formatação HTML Pronta</li>
+                            <li>✓ 1 Revisão Inclusa</li>
+                        </ul>
+                        <a href="mailto:renatabernardo.846@gmail.com?subject=Orçamento Artigo Avulso" class="btn btn-outline btn-full">Solicitar Artigo</a>
+                    </div>
+                    <div class="pricing-card glass-card highlight">
+                        <div class="badge">Mais Vendido</div>
+                        <h3>Plano Autoridade</h3>
+                        <div class="price">R$ 500<span>/mês</span></div>
+                        <ul class="pricing-features">
+                            <li><strong>✓ 4 Artigos por mês</strong></li>
+                            <li>✓ Até 1.200 palavras cada</li>
+                            <li>✓ Pesquisa de SEO Completa</li>
+                            <li>✓ Imagens Royalty-Free</li>
+                            <li>✓ Suporte Prioritário E-mail</li>
+                        </ul>
+                        <a href="mailto:renatabernardo.846@gmail.com?subject=Assinatura Plano Autoridade" class="btn btn-primary btn-full">Assinar Plano</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h2 class="gradient-text">Pronto para dominar as buscas?</h2>
+                <p>Pare de perder clientes para seus concorrentes no Google.</p>
+                <a href="mailto:renatabernardo.846@gmail.com?subject=Orçamento de Redação SEO" class="btn btn-primary btn-large">Enviar E-mail para Renata</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 RC Digital Studio. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
